@@ -25,23 +25,3 @@ T = m.init_temp(grid, params)
 #Déroulement de l'avancement temporel
 
 m.avancement_tempo(nombre_increments)
-
-
-"""
-#Calcul du temps d'exécution
-temps_exécution=[]
-
-for i in range (2,50):
-    start = time.perf_counter()
-    m.avancement_tempo(i)
-    stop = time.perf_counter()
-    temps_exécution.append(stop-start)
-print(temps_exécution)
-
-x=np.linspace(1,nb_segments_max,nb_segments_max)
-plt.plot(x,np.array(temps_exécution))
-plt.xlabel('Nombre d\'itérations')
-plt.ylabel('Temps d\'exécution (en s)')
-plt.grid()
-plt.title('Evolution du temps d\'exécution du programme')
-plt.show()"""
